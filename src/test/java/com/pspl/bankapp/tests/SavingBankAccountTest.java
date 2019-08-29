@@ -21,7 +21,7 @@ public class SavingBankAccountTest {
 	@Test
 	public void testDeposit() {
 		account.deposit(5000.78);
-		assertEquals(31000.78, account.getBalance(), 0.001);
+		assertEquals(30000.78, account.getBalance(), 0.001);
 		account.deposit(3678.67);
 		assertEquals(33679.448, account.getBalance(), 0.003);
 	}
@@ -37,7 +37,7 @@ public class SavingBankAccountTest {
 	@Test(expected = LowBalanceException.class)
 	public void testWithdrawWithException() throws Exception {
 		account.withdraw(12000);
-		assertEquals(14000, account.getBalance(), 0.001);
+		assertEquals(13000, account.getBalance(), 0.001);
 		account.withdraw(5000);
 		assertEquals(8000, account.getBalance(), 0.001);
 	}
