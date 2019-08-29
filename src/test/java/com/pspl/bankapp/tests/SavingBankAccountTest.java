@@ -23,7 +23,7 @@ public class SavingBankAccountTest {
 		account.deposit(5000.78);
 		assertEquals(30000.78, account.getBalance(), 0.001);
 		account.deposit(3678.67);
-		assertEquals(33579.448, account.getBalance(), 0.003);
+		assertEquals(33679.448, account.getBalance(), 0.003);
 	}
 
 	@Test
